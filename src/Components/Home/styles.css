@@ -1,0 +1,31 @@
+.application-title {
+  width: 100%;
+  height: 56px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #bcbcc2;
+}
+
+.application-title h1 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 56px;
+  color: #151519;
+  text-align: left;
+  vertical-align: middle;
+  padding: 0px 36px;
+  margin: 0px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  padding: 24px 36px;
+}
+
+.content div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}

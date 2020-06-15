@@ -1,20 +1,30 @@
 import React from 'react';
-import { SkeletonCard } from './../SkeletonCard';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { Home } from './../Home';
 import './index.css';
+import { Voicemails } from '../Voicemails';
+import { Faxes } from './../Faxes';
 
 const Application = () => (
-  <div className='application' id='user-portal'>
-    <div className='application-title'>
-      <h1>Home</h1>
+  <BrowserRouter basename='user-portal'>
+    <div
+      className='application'
+      id='user-portal'
+      style={{
+        display: 'flex',
+        'flex-direction': 'column',
+        width: '100%',
+        height: '100%'
+      }}
+    >
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/voicemails' component={Voicemails} />
+        <Route exact path='/faxes' component={Faxes} />
+        <Route render={() => <Redirect to='/' />} />
+      </Switch>
     </div>
-    <div className='content'>
-      {['small', 'small', 'small', 'large', 'large', 'large', 'large'].map(
-        (size) => (
-          <SkeletonCard size={size} />
-        )
-      )}
-    </div>
-  </div>
+  </BrowserRouter>
 );
 
 export default Application;

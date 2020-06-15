@@ -12,6 +12,7 @@
   },
   "rules": {
     "indent": ["warn", 2],
-    "jsx-quotes": ["warn", "prefer-single"]
+    "jsx-quotes": ["warn", "prefer-single"],
+    "quote-props": ["warn", "as-needed"]
   }
 }
