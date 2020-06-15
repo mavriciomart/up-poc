@@ -1,0 +1,15 @@
+.skeleton-card {
+  background-color: rgb(219, 219, 222);
+  margin-right: 24px;
+  border-radius: 2px;
+}
+
+.skeleton-card.small {
+  height: 102px;
+  width: 354px;
+}
+
+.skeleton-card.large {
+  height: 320px;
+  width: 544px;
+}

@@ -1,10 +1,19 @@
 import React from 'react';
+import { SkeletonCard } from './../SkeletonCard';
 import './index.css';
-import './index.scss';
 
 const Application = () => (
-  <div id='user-portal'>
-    <h1 className='application-title'>User Portal</h1>
+  <div className='application' id='user-portal'>
+    <div className='application-title'>
+      <h1>Home</h1>
+    </div>
+    <div className='content'>
+      {['small', 'small', 'small', 'large', 'large', 'large', 'large'].map(
+        (size) => (
+          <SkeletonCard size={size} />
+        )
+      )}
+    </div>
   </div>
 );
 
