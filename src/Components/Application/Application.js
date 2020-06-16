@@ -6,7 +6,7 @@ import { Voicemails } from '../Voicemails';
 import { Faxes } from './../Faxes';
 
 const Application = () => (
-  <BrowserRouter basename='user-portal'>
+  <BrowserRouter basename='/user-portal'>
     <div
       className='application'
       id='user-portal'
